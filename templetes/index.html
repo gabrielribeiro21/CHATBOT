@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot GPT-4</title>
+</head>
+<body>
+    <h1>Chat com GPT-4 🤖</h1>
+    <form method="POST">
+        <input type="text" name="mensagem" placeholder="Digite sua mensagem" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    {% if resposta %}
+        <h3>Resposta:</h3>
+        <p>{{ resposta }}</p>
+    {% endif %}
+</body>
+</html>
